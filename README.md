@@ -33,6 +33,52 @@ This project extends the foundational research of *"Improved Techniques for Trai
 | ImageNet (Subset) | Pre-classified into folders using ResNet | 128×128 | 8,706 |
 
 ---
+## 🔗 Dataset Download Links
+
+### 📘 MNIST – Handwritten Digits
+- Official Page: [http://yann.lecun.com/exdb/mnist](http://yann.lecun.com/exdb/mnist)
+- Google-hosted Mirror (for quick load): [Download `.npz`](https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz)
+- PyTorch Access:
+  ```python
+  from torchvision.datasets import MNIST
+  ```
+
+---
+
+### 🖼️ CIFAR-10 – 10-Class Image Dataset
+- Official Page: [https://www.cs.toronto.edu/~kriz/cifar.html](https://www.cs.toronto.edu/~kriz/cifar.html)
+- Direct Download: [cifar-10-python.tar.gz](https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz)
+- PyTorch Access:
+  ```python
+  from torchvision.datasets import CIFAR10
+  ```
+
+---
+
+### 🔢 SVHN – Street View House Numbers
+- Official Page: [http://ufldl.stanford.edu/housenumbers/](http://ufldl.stanford.edu/housenumbers/)
+- Download Links:
+  - [Train (train_32x32.mat)](http://ufldl.stanford.edu/housenumbers/train_32x32.mat)
+  - [Test (test_32x32.mat)](http://ufldl.stanford.edu/housenumbers/test_32x32.mat)
+  - [Extra (extra_32x32.mat)](http://ufldl.stanford.edu/housenumbers/extra_32x32.mat)
+- PyTorch Access:
+  ```python
+  from torchvision.datasets import SVHN
+  ```
+
+---
+
+### 🧠 ImageNet (Subset Used in Project)
+- **Note:** Full ImageNet access requires registration.
+- Official Site: [https://www.image-net.org/download-images](https://www.image-net.org/download-images)
+- Alternative (Tiny ImageNet on Kaggle): [https://www.kaggle.com/datasets/csafrit2/tiny-imagenet](https://www.kaggle.com/datasets/csafrit2/tiny-imagenet)
+- In this project:
+  - Downloaded 8,706 high-quality images
+  - Resized to 128×128
+  - Categorized using a pretrained **ResNet model**
+  - Organized into folders for structured GAN training
+
+---
 
 ## 🧪 Experiments & Results
 
